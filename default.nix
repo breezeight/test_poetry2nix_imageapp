@@ -12,7 +12,7 @@ pkgs.poetry2nix.mkPoetryApplication {
       flask = super.flask.overridePythonAttrs
       (
         old: {
-          buildInputs = (old.buildInputs or [ ]) ++ [super.setuptools] ++ [super.flit-core];
+          buildInputs = (old.buildInputs or [ ]) ++ [super.setuptools super.flit-core];
         }
       );
 
