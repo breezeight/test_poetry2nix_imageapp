@@ -11,7 +11,7 @@ requests = "^2.31.0"
 pillow = "^10.0.1"
 flask = "2.3.3"
 influxdb3-python = "^0.2.3"
-
+#pandas = "2.1.0"
 
 [build-system]
 requires = ["poetry-core"]
